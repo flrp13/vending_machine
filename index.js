@@ -165,7 +165,7 @@ function calculate_change(product_id) {
         }
 
         available_coins[i][1]--
-        machine_state.current_transaction.coins_inserted[available_coins[i][0]]--
+        machine_state.inventory.coins[available_coins[i][0]]-- //explain this
         working_diff -= parseFloat(available_coins[i][0])
     }
 
